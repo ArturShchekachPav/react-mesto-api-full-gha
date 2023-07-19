@@ -1,0 +1,16 @@
+.login__text {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  margin: 15px 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .login__text {
+    margin: 19px 0 0 0;
+  }
+}

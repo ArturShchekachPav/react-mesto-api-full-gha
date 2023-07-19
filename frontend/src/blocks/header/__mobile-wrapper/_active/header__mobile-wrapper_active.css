@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+  .header__mobile-wrapper_active {
+    padding-top: 27px;
+    border-top: 1px solid rgba(84, 84, 84, 0.7);
+  }
+}

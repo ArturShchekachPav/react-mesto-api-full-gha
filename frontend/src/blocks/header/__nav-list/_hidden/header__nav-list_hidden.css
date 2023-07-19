@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .header__nav-list_hidden {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    height: 0;
+    visibility: hidden;
+    transition: height linear 0.5s;
+  }
+}

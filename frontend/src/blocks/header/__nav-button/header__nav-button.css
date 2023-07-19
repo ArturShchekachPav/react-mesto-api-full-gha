@@ -1,0 +1,23 @@
+.header__nav-button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-button:hover {
+  cursor: pointer;
+}
+
+/*@media screen and (max-width: 600px) {*/
+/*  .header__nav-button {*/
+/*    font-size: 14px;*/
+/*    line-height: 17px;*/
+/*  }*/
+/*}*/

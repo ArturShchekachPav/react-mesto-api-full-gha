@@ -1,0 +1,11 @@
+﻿.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 730px) {
+  .profile {
+    display: block;
+  }
+}
