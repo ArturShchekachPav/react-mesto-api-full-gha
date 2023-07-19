@@ -1,0 +1,8 @@
+﻿.element__info {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 25px 20px;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 30px;
+}

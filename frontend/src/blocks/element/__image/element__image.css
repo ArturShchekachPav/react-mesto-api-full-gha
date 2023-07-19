@@ -1,0 +1,8 @@
+﻿.element__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}

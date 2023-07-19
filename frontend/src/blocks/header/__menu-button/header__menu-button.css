@@ -1,0 +1,21 @@
+.header__menu-button {
+  visibility: hidden;
+  border: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  background-image: url(../../../images/burger_menu.svg);
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .header__menu-button {
+    visibility: visible;
+    width: 24px;
+    height: 18px;
+  }
+}

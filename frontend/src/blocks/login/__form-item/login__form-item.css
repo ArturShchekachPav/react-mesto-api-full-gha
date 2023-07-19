@@ -1,0 +1,13 @@
+.login__form-item {
+  margin-bottom: 27px;
+}
+
+.login__form-item:nth-last-of-type(1) {
+  margin-bottom: 212px;
+}
+
+@media screen and (max-width: 600px) {
+  .login__form-item:nth-last-of-type(1) {
+    margin-bottom: 169px;
+  }
+}

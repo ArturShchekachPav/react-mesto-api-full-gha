@@ -1,0 +1,20 @@
+﻿.header__logo {
+  background-image: url(../../../images/header__logo.svg);
+  width: 142px;
+  aspect-ratio: 142/33;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 954px) {
+  .header__logo {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    width: 104px;
+    aspect-ratio: 142/33;
+  }
+}

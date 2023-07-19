@@ -1,0 +1,16 @@
+.header__nav-info {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+/*@media screen and (max-width: 600px) {*/
+/*  .header__nav-info {*/
+/*    font-size: 14px;*/
+/*    line-height: 17px;*/
+/*  }*/
+/*}*/
