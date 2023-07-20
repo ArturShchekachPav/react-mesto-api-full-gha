@@ -22,8 +22,9 @@ const app = express();
 app.disable('etag');
 
 app.use(cors({
-  origin: '*',
+  origin: 'http://keeperofplaces.nomoredomains.xyz/',
   credentials: true,
+  allowedHeaders: ['Content-Type'],
 }));
 
 const limiter = rateLimit({
