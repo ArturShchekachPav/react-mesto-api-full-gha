@@ -45,7 +45,6 @@ app.use(bodyParser.json());
 
 app.use(requestLogger);
 app.use('/api/', routes);
-app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 app.use(errorLogger);
 app.use(errors());
