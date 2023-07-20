@@ -21,7 +21,11 @@ const app = express();
 app.disable('etag');
 
 app.use(cors({
-  origin: 'http://keeperofplaces.nomoredomains.xyz',
+  origin: [
+    'http://keeperofplaces.nomoredomains.xyz',
+    'localhost:3000',
+    'https://keeperofplaces.nomoredomains.xyz'
+  ],
   credentials: true,
 }));
 
