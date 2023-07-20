@@ -163,7 +163,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:3005/api',
+  baseUrl: 'http://api.keeperofplaces.nomoredomains.xyz',
   headers: {
     'Content-Type': 'application/json',
   }
