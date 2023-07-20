@@ -5,7 +5,6 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
-const path = require('path');
 const cors = require('cors');
 const routes = require('./routes');
 const centralErrorHandler = require('./middlewares/central-error-handler');
