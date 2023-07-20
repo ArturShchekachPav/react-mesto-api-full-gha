@@ -121,8 +121,8 @@ const login = (req, res, next) => {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
         secure: true,
-        sameSite: true,
-        domain: '.keeperofplaces.nomoredomains.xyz',
+        sameSite: 'None',
+        domain: 'keeperofplaces.nomoredomains.xyz'
       }).send({ message: 'Успешная авторизация' });
     })
     .catch(next);
