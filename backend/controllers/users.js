@@ -6,6 +6,8 @@ const IncorrectRequestError = require('../errors/incorrect-request-error');
 const ConflictError = require('../errors/conflict-error');
 const { CREATED_CODE } = require('../utils/constants');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 const getUsers = (req, res, next) => User.find({})
   .then((users) => res.send(users)).catch(next);
 
@@ -115,7 +117,11 @@ const login = (req, res, next) => {
 
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, 'some-secret-key', { expiresIn: '7d' });
+      const token = jwt.sign(
+        { _id: user._id },
+        NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+        { expiresIn: '7d' },
+      );
 
       res.cookie('jwt', token, {
         maxAge: 3600000 * 24 * 7,
