@@ -22,7 +22,7 @@ const app = express();
 app.disable('etag');
 
 app.use(cors({
-  origin: 'http://localhost:3005',
+  origin: '*',
   credentials: true,
 }));
 
