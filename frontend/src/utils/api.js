@@ -155,6 +155,7 @@ class Api {
       {
         method: 'GET',
         credentials: 'include',
+        headers: this.headers,
       }
     )
       .then(this._checkResponse);
