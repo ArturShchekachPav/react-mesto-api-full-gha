@@ -119,9 +119,6 @@ const login = (req, res, next) => {
 
       res.cookie('jwt', token, {
         maxAge: 3600000 * 24 * 7,
-        httpOnly: true,
-        sameSite: true,
-        domain: 'keeperofplaces.nomoredomains.xyz'
       }).send({ message: 'Успешная авторизация' });
     })
     .catch(next);
