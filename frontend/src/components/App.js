@@ -114,8 +114,10 @@ function App() {
       formAuthValue.password
     )
       .then(() => {
-        setInfoTooltipStatus(true);
-        setIsInfoTooltipOpen(true);
+        handleLogin();
+        navigate('/',
+          {replace: true}
+        );
 
         setFormAuthValue({
           email: '',
