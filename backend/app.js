@@ -11,7 +11,7 @@ const routes = require('./routes');
 const centralErrorHandler = require('./middlewares/central-error-handler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3005 } = process.env;
+const { PORT = 3000 } = process.env;
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   useNewUrlParser: true,
