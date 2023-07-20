@@ -122,7 +122,7 @@ const login = (req, res, next) => {
         httpOnly: true,
         secure: true,
         sameSite: true,
-        domain: 'http://keeperofplaces.nomoredomains.xyz',
+        domain: '.keeperofplaces.nomoredomains.xyz',
       }).send({ message: 'Успешная авторизация' });
     })
     .catch(next);
