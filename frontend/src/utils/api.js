@@ -104,6 +104,7 @@ class Api {
       {
         method: 'PATCH',
         headers: this.headers,
+        credentials: 'include',
         body: JSON.stringify({
           avatar: link
         })
@@ -127,6 +128,7 @@ class Api {
       {
         method: 'POST',
         headers: this.headers,
+        credentials: 'include',
         body: JSON.stringify({
           email,
           password
