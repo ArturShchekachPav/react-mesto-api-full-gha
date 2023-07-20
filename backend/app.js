@@ -25,7 +25,7 @@ app.use(cors({
   origin: [
     'http://keeperofplaces.nomoredomains.xyz',
     'localhost:3000',
-    'https://keeperofplaces.nomoredomains.xyz'
+    'https://keeperofplaces.nomoredomains.xyz',
   ],
   credentials: true,
 }));
