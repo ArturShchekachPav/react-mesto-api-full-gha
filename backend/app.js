@@ -20,18 +20,7 @@ const app = express();
 
 app.disable('etag');
 
-app.use(cors({
-  origin: [
-    'http://localhost:80',
-    'https://localhost:3000',
-    'http://keeperofplaces.nomoredomains.xyz/',
-    'http://51.250.14.241',
-  ],
-  allowedHeaders: ['Content-Type', 'origin'],
-  methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-  preflightContinue: false,
-  credentials: true,
-}));
+app.use(cors());
 
 const limiter = rateLimit({
   max: 100,
