@@ -11,9 +11,9 @@ const centralErrorHandler = require('./middlewares/central-error-handler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 require('dotenv').config();
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 
-mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
+mongoose.connect(DB_URL, {
   useNewUrlParser: true,
 });
 
@@ -43,11 +43,11 @@ app.use(helmet({
     },
   },
 }));
-app.use(limiter);
 app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(requestLogger);
+app.use(limiter);
 app.use(routes);
 
 app.use(errorLogger);
