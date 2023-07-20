@@ -44,7 +44,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(requestLogger);
-app.use('/api/', routes);
+app.use(routes);
 
 app.use(errorLogger);
 app.use(errors());
